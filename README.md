@@ -33,4 +33,5 @@ HTML
 CSS
 
 ### License
+MIT License
 
