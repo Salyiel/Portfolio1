@@ -100,9 +100,37 @@ button{
 
  /* About section styling */
  #about{
-    padding: 400px 0;
+    padding: 0;
+    margin: 0;
     color: black;
-    
+    background-image: url("https://images.app.goo.gl/cbYwXxBrsbQ7gMsn6");
+    background-size: cover;
+}
+
+.nav{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin:  0 20px; 
+    /* to aid in hovering this was added */
+    position: relative;
+
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: beige;
+    text-transform: capitalize;
+
 }
 
 .row{
