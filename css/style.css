@@ -97,14 +97,20 @@ button{
     width: 100%;
 }
 
-.social-media{
-    padding: 40px;
-    background-color: transparent;
+.social-media i{
+    padding: 0;
+    background-color: none;
     display: inline-block;
-    align-items: center;
+    text-align: center;
     justify-content: space-between;
+    margin: 0;
+    transition: transform 0.5s;
 }
 
+.social-media i:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
 
  /* About section styling */
  #about{
@@ -282,6 +288,12 @@ button{
     transform: translateY(-10px)
 }
 
+.blog-list div img{
+    width: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 /* Contact page styling */
 #contact{
     color: beige;
@@ -324,8 +336,40 @@ button{
     transform: translateY(-5px);
 }
 
-.button.button2{
+.button{
     padding: 20px 0;
     display: inline-block;
     color: #ff004f;
+    
+}
+
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: navajowhite;
+    background: white;
+    padding: 2px 0;
+    margin: 15px 0;
+    color: #262626;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .button{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.copyright{
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 0 25px;
+    background: #262626;
+    font-weight: 300;
 }
