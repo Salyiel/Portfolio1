@@ -7,23 +7,27 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body> 
-    <nav>
-        <ul>
-            <li><a href="index.html"> Home</a></li>
-            <li><a href="about.html"> About</a></li>
-            <li><a href="project.html"> Project</a></li>
-            <li><a href="blog.html"> Blog</a></li>
-            <li><a href="contact.html"> Contact</a></li>
+    <div Class="banner">
+        <div Class="navbar">
+            <img src="data:image/png;base64,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" alt="logo">
 
-        </ul>
+            <ul>
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="about.html"> About</a></li>
+                <li><a href="project.html"> Project</a></li>
+                <li><a href="blog.html"> Blog</a></li>
+                <li><a href="contact.html"> Contact</a></li>
 
-    </nav>
+            </ul>
+    
+        </div>
+  
 
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="/Users/stacyalyiela/Portfolio1/images/image/IMG_8996 Copy copy.JPG">
+                    <img src="images/image/IMG_8996 Copy copy.JPG">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title"> About Me</h1>
@@ -56,7 +60,7 @@
                     <div class="tab-contents"  id="education">
                         <ul>
                             <li><span>2024 - Current</span><br>Software Engineering</li>
-                            <li><span>2018 - 2022</span><br>MSc. Informations Scienec<br></li>
+                            <li><span>2018 - 2022</span><br>MSc. Informations Science<br></li>
                             <li><span>2021 - 2021</span><br>Diploma in Counselling Skills</li>
                             <li><span>2011 - 2015</span><br>BSc.Information Systems and Technology </li>
                         </ul>
