@@ -382,59 +382,72 @@ nav .fas{
 
 }
 /* css for small, mobile screens */
-@media only screen and (max-width: 600px){
-    .banner {
-        background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(https://images.app.goo.gl/e6Yo6TnpBPBFNPmq7);
-    }
-    .navbar ul li{
-        margin-top: 100%;
-        font-size: 16px;
-        display: block;
-        margin: 20px;
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
     }
 
-    .navbar ul{
+    .navbar ul {
+        flex-direction: column;
         background: #ff004f;
         position: fixed;
         top: 0;
         right: 0;
-        width: 200px;
+        width: 100%; /* Full width for small screens */
         height: 100vh;
         padding-top: 50px;
+        display: none; /* Initially hide the menu */
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
     }
-    nav .fas{
+
+    .navbar ul.show {
+        display: flex; /* Show the menu when toggled */
+        flex-direction: column;
+        transform: translateX(0%);
+    }
+
+    .navbar ul li {
+        margin: 20px;
+        font-size: 18px; /* Increase font size for better readability */
+    }
+
+    nav .fas {
         display: block;
         font-size: 25px;
-        
+        cursor: pointer;
+        margin: 10px;
+        color: #fff;
     }
+
+    .logo {
+        width: 50px; /* Increase size of the logo for visibility */
+        cursor: pointer;
+        border-radius: 100%;
+    }
+
     .content h1 {
-        font-size: 30px;
+        font-size: 24px; /* Adjust heading size for better readability */
         margin-top: 10px;
     }
+
     .content p {
-        margin: 20px auto;
-        font-weight: 100px;
-        line-height: 15px;
-    
+        margin: 10px auto; /* Adjust paragraph margin */
+        font-weight: normal; /* Use normal instead of 100px for font weight */
+        line-height: 1.6;
     }
 
-.logo{
-    width: 10px;
-    cursor: pointer;
-    border-radius: 100%;
-}
-button{
-    width: 100px;
-    padding: 15px 0;
-    text-align: center;
-    margin: 20px 10px;
-    border-radius: 25px;
-    font-weight: bold;
-    border: 2px solid lightskyblue;
-    background: transparent;
-    color: beige;
-    cursor: pointer;
-}
-
-
+    button {
+        width: 150px; /* Increase button width for better tap targets */
+        padding: 15px 0;
+        text-align: center;
+        margin: 20px 10px;
+        border-radius: 25px;
+        font-weight: bold;
+        border: 2px solid lightskyblue;
+        background: transparent;
+        color: beige;
+        cursor: pointer;
+    }
 }
