@@ -289,10 +289,11 @@ button{
 }
 
 .blog-list div img{
-    width: auto;
+    width: 10%;
     border-radius: 10px;
     cursor: pointer;
 }
+
 
 /* Contact page styling */
 #contact{
