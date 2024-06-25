@@ -289,10 +289,11 @@ button{
 }
 
 .blog-list div img{
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    width: 100px; /* Adjust this value to control the size of the images */
+    display: block;
+    margin: 0 auto;
 }
 
 
