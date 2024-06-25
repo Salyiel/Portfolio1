@@ -289,9 +289,10 @@ button{
 }
 
 .blog-list div img{
-    width: 10%;
-    border-radius: 10px;
-    cursor: pointer;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 
